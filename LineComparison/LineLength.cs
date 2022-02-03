@@ -22,7 +22,7 @@ namespace LineComparison
             double length = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
             Console.WriteLine("Line1 Distance..:- "+ length);
 
-            Console.WriteLine("Enter a Co-ordinate for line1");
+            Console.WriteLine("Enter a Co-ordinate for line2");
             Console.WriteLine("Enter X Co-ordinate...! ");
             int a1 = Convert.ToInt32(Console.ReadLine());
             int a2 = Convert.ToInt32(Console.ReadLine());
@@ -36,6 +36,14 @@ namespace LineComparison
             if (length == lengt)
             {
                 Console.WriteLine("Line1 distance equal Line2");
+            }
+            else if (length < lengt)
+            {
+                Console.WriteLine("Line2 is greater than Line1...! ");
+            }
+            else
+            {
+                Console.WriteLine("Line1 is greater than Line2...! ");
             }
 
         }
